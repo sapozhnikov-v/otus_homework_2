@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  lotto:
+    container_name: otus_homework_2
+    build: ./app
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "1m"
+    environment:
+      - TZ=Europe/Moscow
