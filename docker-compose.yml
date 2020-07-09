@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   lotto:
-    container_name: otus_homework_2
+    container_name: lotto
     build: ./app
     logging:
       driver: "json-file"
